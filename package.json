@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear --single --host 0.0.0.0 --port $PORT",
+    "start": "sirv public --host $HOST --port $PORT",
     "lint": "eslint . --ext .js,.svelte --fix",
     "format": "prettier --write '{public,src}/**/*.{css,html,js,svelte}'",
     "check": "svelte-check --tsconfig ./tsconfig.json"
