@@ -9,7 +9,7 @@
 getTextColorByBackgroundColor
   } from '../utils/Helpers';
 
-  let colorText = calculateDayColor(new Date('2022-06-11'));
+  let colorText = calculateDayColor();
   let textColor = getTextColorByBackgroundColor(colorText);
   let backgroundColor = ColorToHex[colorText];
   let index = getIndexOfColor(colorText);
