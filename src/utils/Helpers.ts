@@ -8,7 +8,7 @@ export const formatDate = dateString => {
     return `${day} ${MONTH_NAMES[month]} ${year}` ;
 };
 
-export const getStringDate = () => formatDate(new Date());
+export const getStringDate = (date = new Date()) => formatDate(date);
 
 export const calculateDayColor = (date = new Date()) => {
     const sum = getSumOfDigits(date.toLocaleDateString());
